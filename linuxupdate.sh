@@ -24,6 +24,6 @@ if [[ $(sudo apt update | grep -o '^[0-9]\+ packages can be upgraded') ]]; then
         #echo "Updates are OK on machine $pc"
     fi
 else
-    #echo "No updates are available."
-    curl -d "Machine $pc without updates" https://noti.techtretas.dev/alerts # Send a notification
+    echo "No updates are available."
+    #curl -d "Machine $pc without updates" https://noti.techtretas.dev/alerts # Send a notification
 fi
