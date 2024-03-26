@@ -7,6 +7,7 @@ upgrade_output=$(sudo sudo apt upgrade -y )
 #check for updates
 if [[ $(sudo apt update | grep -o '^[0-9]\+ packages can be upgraded') ]]; then
     sudo apt upgrade -y
+    sudo apt -f install -y
     sudo apt autoremove -y
     #echo "parte1"
 
