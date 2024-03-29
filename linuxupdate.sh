@@ -28,3 +28,5 @@ else
     echo "warnings"
     #curl -d "Machine $pc without updates" https://noti.techtretas.dev/alerts # Send a notification
 fi
+
+echo $pc
