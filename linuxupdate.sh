@@ -27,5 +27,3 @@ else
     echo "No updates are available."
     #curl -d "Machine $pc without updates" https://noti.techtretas.dev/alerts # Send a notification
 fi
-
-echo $pc
