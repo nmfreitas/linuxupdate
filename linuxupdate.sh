@@ -14,7 +14,7 @@ if [[ $(sudo apt update | grep -o '^[0-9]\+ packages can be upgraded') ]]; then
     if [[ $update_output =~ "W:" ]]; then # Check warnings
         #echo "$update_output"  # Print the error messages
         #curl -d "Updates with warnings on machine $pc" https://noti.techtretas.dev/alerts  # Send a notification
-        echo "Updst with warnings"
+        echo "Updates with warnings"
     elif [[ $upgrade_output =~ "The following " ]]; then # Check not upgraded
         #echo "$upgrade_output"  # Print the error messages
         #curl -d "Upgrade needed on machine $pc" https://noti.techtretas.dev/alerts  # Send a notification 
